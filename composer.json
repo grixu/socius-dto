@@ -1,0 +1,45 @@
+{
+    "name": "grixu/socius-dto",
+    "description": "Simple class for wrapping data with relations",
+    "keywords": [
+        "grixu",
+        "socius-dto"
+    ],
+    "homepage": "https://github.com/grixu/socius-dto",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mateusz Gostański",
+            "email": "mg@grixu.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "spatie/data-transfer-object": "^3.1",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "illuminate/database": "^8.0",
+        "orchestra/testbench": "^6.15",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grixu\\SociusDto\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Grixu\\SociusDto\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
