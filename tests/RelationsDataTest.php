@@ -30,7 +30,7 @@ class RelationsDataTest extends TestCase
                 'foreignClass' => Model::class,
                 'relation' => 'relationship',
                 'foreignField' => 'id',
-                'foreignKeys' => 10
+                'foreignKeys' => 10,
             ]
         );
     }
@@ -54,7 +54,7 @@ class RelationsDataTest extends TestCase
                 'foreignClass' => Model::class,
                 'relation' => 'manyToMany',
                 'foreignField' => 'id',
-                'foreignKeys' => [2, 3, 4, 5]
+                'foreignKeys' => [2, 3, 4, 5],
             ]
         );
     }

@@ -9,7 +9,7 @@ class RelationsDataCaster implements Caster
     public function cast(mixed $value): array
     {
         return array_map(
-            fn(array $data) => new RelationsData(...$data),
+            fn (array $data) => new RelationsData(...$data),
             $value
         );
     }

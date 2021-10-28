@@ -30,13 +30,12 @@ class SociusDtoTest extends TestCase
                     'type' => BelongsToMany::class,
                     'relation' => 'manyToMany',
                     'foreignField' => 'id',
-                    'foreignKeys' => 4
-                ]
-            ]
+                    'foreignKeys' => 4,
+                ],
+            ],
         ];
 
-        $this->obj = new class($data) extends SociusDto
-        {
+        $this->obj = new class ($data) extends SociusDto {
             public string $test;
         };
     }
