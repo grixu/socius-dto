@@ -17,16 +17,16 @@
     ],
     "require": {
         "php": "^8.0",
-        "spatie/data-transfer-object": "^3.1",
-        "illuminate/support": "^8.0"
+        "spatie/data-transfer-object": "^3.8",
+        "illuminate/support": "^9.0"
     },
     "require-dev": {
-        "brainmaestro/composer-git-hooks": "^2.8",
+        "brainmaestro/composer-git-hooks": "^v3.0.0-alpha.1",
         "friendsofphp/php-cs-fixer": "^3.1",
-        "illuminate/database": "^8.0",
-        "nunomaduro/larastan": "^0.7.12 || ^1.0.0",
+        "illuminate/database": "^9.0",
+        "nunomaduro/larastan": "^1.0.0",
         "nunomaduro/phpinsights": "^2.0",
-        "orchestra/testbench": "^6.15",
+        "orchestra/testbench": "^7.0",
         "phpunit/phpunit": "^9.5",
         "spatie/x-ray": "^1.1"
     },
@@ -50,7 +50,10 @@
         "xray": "vendor/bin/x-ray src"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "extra": {
         "hooks": {
