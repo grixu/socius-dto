@@ -24,7 +24,7 @@ class RelationsDataTest extends TestCase
 
     protected function createBelongsToRelationshipData(): void
     {
-        $this->obj = new RelationsData(
+        $this->obj = RelationsData::from(
             [
                 'type' => BelongsTo::class,
                 'foreignClass' => Model::class,
@@ -48,7 +48,7 @@ class RelationsDataTest extends TestCase
 
     protected function createManyToManyRelationshipData(): void
     {
-        $this->obj = new RelationsData(
+        $this->obj = RelationsData::from(
             [
                 'type' => BelongsToMany::class,
                 'foreignClass' => Model::class,

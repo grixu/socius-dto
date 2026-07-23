@@ -35,9 +35,11 @@ class SociusDtoTest extends TestCase
             ],
         ];
 
-        $this->obj = new class ($data) extends SociusDto {
+        $dto = new class extends SociusDto {
             public string $test;
         };
+
+        $this->obj = $dto::from($data);
     }
 
     /** @test */

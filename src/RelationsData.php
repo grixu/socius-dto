@@ -2,9 +2,9 @@
 
 namespace Grixu\SociusDto;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class RelationsData extends DataTransferObject
+class RelationsData extends Data
 {
     public string $foreignClass;
     public string $type;
