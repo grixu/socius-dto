@@ -2,11 +2,11 @@
 
 namespace Grixu\SociusDto;
 
-use Spatie\DataTransferObject\Attributes\CastWith;
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Attributes\DataCollectionOf;
+use Spatie\LaravelData\Data;
 
-abstract class SociusDto extends DataTransferObject
+abstract class SociusDto extends Data
 {
-    #[CastWith(RelationsDataCaster::class)]
-    public array|null $relations;
+    #[DataCollectionOf(RelationsData::class)]
+    public array|null $relations = null;
 }
